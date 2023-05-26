@@ -8,5 +8,6 @@ index_site_pages = ["blog"]
 copyright = "Dang Van Thanh"
 github = "https://github.com/dangvanthanh"
 twitter = "https://twitter.com/dangvanthanh"
+hobby = "Food Lover"
 
 date_style = "%B %e, %Y"

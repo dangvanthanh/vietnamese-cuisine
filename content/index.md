@@ -5,12 +5,12 @@
 # REQUIRED
 
 # The title of the document
-title = "Welcome to Bartholomew"
+title = "Bánh mì Tràng Tiền Huế"
 
 # OPTIONAL
 
 # The description of the page.
-description = "The Micro-CMS for WebAssembly and Spin"
+description = "Bánh mì Tràng Tiền Huế"
 
 # The name of the template to use. `templates/` is automatically prepended, and `.hbs` is appended.
 # So if you set this to `blog`, it becomes `templates/blog.hbs`.
@@ -19,11 +19,9 @@ description = "The Micro-CMS for WebAssembly and Spin"
 # These fields are user-definable. You can create whatever values you want
 # here. The format must be `string` keys with `string` values, though.
 [extra]
-date = "Api. 09, 2023"
+date = "26th May, 2023"
 
 # Anything after this line is considered Markdown content
 ---
 
-This is an example home page written in _Markdown_.
-
-You can find this text in `content/index.md`.
+Nằm trên 8 Hoàng Hoa Thám cạnh bên bưu điện thành phố Huế.
