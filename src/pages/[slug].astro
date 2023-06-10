@@ -16,7 +16,9 @@ export async function getStaticPaths() {
 const { frontmatter, Content } = Astro.props.post;
 ---
 
-<h2>{frontmatter.title}</h2>
-<article>
-    {frontmatter.pubDate}
-</article>
+<div class="container max-w-2xl mx-auto">
+    <h2 class="text-2xl font-semibold leading-tight">{frontmatter.title}</h2>
+    <article>
+        {frontmatter.pubDate}
+    </article>
+</div>
