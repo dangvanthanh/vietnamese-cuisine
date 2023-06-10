@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const posts = (await Astro.glob("./../content/*.{md,mdx}")).sort(
+    (a, b) =>
+        new Date(b.frontmatter.pubDate).valueOf() -
+        new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<Layout>
+    <ul>
+        {
+            posts.map((post) => (
+                <li>
+                    <time datetime={post.frontmatter.pubDate}>
+                        {new Date(post.frontmatter.pubDate).toLocaleDateString(
+                            "en-us",
+                            {
+                                year: "numeric",
+                                month: "short",
+                                day: "numeric",
+                            }
+                        )}
+                    </time>
+                    <a
+                        href={post.file
+                            .split("/")
+                            .pop()
+                            .replace(/\.md(x)?/, "")}
+                    >
+                        {post.frontmatter.title}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</Layout>

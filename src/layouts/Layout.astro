@@ -1,0 +1,22 @@
+---
+import Navigation from "../components/Navigation.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Vietnamse Cuisine - {title}</title>
+    </head>
+    <body>
+        <Navigation />
+        <main role="main">
+            <div class="container mx-auto px-2 sm:px-6 lg:px-8">
+                <slot />
+            </div>
+        </main>
+    </body>
+</html>
