@@ -59,6 +59,29 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "author",
+        label: "Authors",
+        path: "src/content/authors",
+        format: 'mdx',
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Name",
+            isTitle: true,
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "birthday",
+            label: "Birthday",
+            ui: {
+              dateFormat: "DD MMMM YYYY"
+            }
+          },
+        ],
+      },
     ],
   },
 });
