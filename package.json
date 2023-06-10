@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "tina": "tinacms dev -c \"astro dev\"",
-    "tina-build": "tinacms build -c \"astro build\""
+    "tina:dev": "tinacms dev -c \"astro dev\"",
+    "tina:build": "tinacms build -c \"astro build\""
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
